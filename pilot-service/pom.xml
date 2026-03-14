@@ -15,6 +15,17 @@
 	<modules>
 		<module>pilot-vehicle-service</module>
 		<module>pilot-driver-service</module>
+		<module>heloc-application-service</module>
+		<module>heloc-credit-service</module>
+		<module>heloc-pricing-service</module>
+		<module>heloc-profile-service</module>
+		<module>heloc-document-service</module>
+		<module>heloc-avm-service</module>
+		<module>heloc-openbanking-service</module>
+		<module>heloc-cosigner-service</module>
+		<module>heloc-communication-service</module>
+		<module>heloc-dashboard-service</module>
+		<module>heloc-pipeline-service</module>
 	</modules>
 	<dependencies>
 		<dependency>
