@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:8097}
+  port: ${PORT:9097}
 
 spring:
   jpa:
@@ -69,7 +69,7 @@ rest:
   impl-class: me.anichakra.poc.pilot.framework.instrumentation.impl.RestTemplateImpl
   consumers:
     - name: credit-pull
-      url: http://${CREDIT_SERVICE_HOST:localhost}:8091/heloc-credit-service/0.0/credit/pull
+      url: http://${CREDIT_SERVICE_HOST:localhost}:9091/heloc-credit-service/0.0/credit/pull
       secured: false
       contentType: application/json
       responseType: java.lang.String

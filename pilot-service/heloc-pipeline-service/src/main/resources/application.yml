@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:8100}
+  port: ${PORT:9100}
 
 spring:
   jpa:
@@ -69,13 +69,13 @@ rest:
   impl-class: me.anichakra.poc.pilot.framework.instrumentation.impl.RestTemplateImpl
   consumers:
     - name: application-service
-      url: http://${APPLICATION_SERVICE_HOST:localhost}:8090/heloc-application-service/0.0/application
+      url: http://${APPLICATION_SERVICE_HOST:localhost}:9090/heloc-application-service/0.0/application
       secured: false
       contentType: application/json
       responseType: java.lang.String
       method: GET
     - name: communication-followup
-      url: http://${COMMUNICATION_SERVICE_HOST:localhost}:8098/heloc-communication-service/0.0/followup/create
+      url: http://${COMMUNICATION_SERVICE_HOST:localhost}:9098/heloc-communication-service/0.0/followup/create
       secured: false
       contentType: application/json
       responseType: java.lang.String

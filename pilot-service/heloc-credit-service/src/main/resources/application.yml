@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:8091}
+  port: ${PORT:9091}
 
 spring:
   jpa:
@@ -69,13 +69,13 @@ rest:
   impl-class: me.anichakra.poc.pilot.framework.instrumentation.impl.RestTemplateImpl
   consumers:
     - name: avm-valuation
-      url: http://${AVM_SERVICE_HOST:localhost}:8095/heloc-avm-service/0.0/valuation
+      url: http://${AVM_SERVICE_HOST:localhost}:9095/heloc-avm-service/0.0/valuation
       secured: false
       contentType: application/json
       responseType: me.anichakra.poc.pilot.heloc.credit.domain.PropertyValuation
       method: POST
     - name: openbanking-income
-      url: http://${OPENBANKING_SERVICE_HOST:localhost}:8096/heloc-openbanking-service/0.0/income
+      url: http://${OPENBANKING_SERVICE_HOST:localhost}:9096/heloc-openbanking-service/0.0/income
       secured: false
       contentType: application/json
       responseType: me.anichakra.poc.pilot.heloc.credit.domain.IncomeVerification
